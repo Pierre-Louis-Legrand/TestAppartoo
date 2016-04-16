@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233A00FE1CC1BAC400841CE8 /* BarMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A00FD1CC1BAC400841CE8 /* BarMapViewController.swift */; };
+		233A00FF1CC1BAC400841CE8 /* BarMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A00FD1CC1BAC400841CE8 /* BarMapViewController.swift */; };
+		233A01011CC1C9AA00841CE8 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A01001CC1C9AA00841CE8 /* VCMapView.swift */; };
+		233A01021CC1C9AA00841CE8 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A01001CC1C9AA00841CE8 /* VCMapView.swift */; };
+		233A01041CC1D17A00841CE8 /* bars.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A01031CC1D17A00841CE8 /* bars.json */; };
+		233A01051CC1D17A00841CE8 /* bars.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A01031CC1D17A00841CE8 /* bars.json */; };
 		233ECD091CC12FC900A5ECFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD081CC12FC900A5ECFA /* AppDelegate.swift */; };
-		233ECD0B1CC12FC900A5ECFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD0A1CC12FC900A5ECFA /* ViewController.swift */; };
 		233ECD0E1CC12FC900A5ECFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233ECD0C1CC12FC900A5ECFA /* Main.storyboard */; };
 		233ECD101CC12FC900A5ECFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233ECD0F1CC12FC900A5ECFA /* Images.xcassets */; };
 		233ECD131CC12FC900A5ECFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233ECD111CC12FC900A5ECFA /* LaunchScreen.xib */; };
 		233ECD1F1CC12FC900A5ECFA /* TestAppartooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD1E1CC12FC900A5ECFA /* TestAppartooTests.swift */; };
+		233ECD291CC1330000A5ECFA /* BarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD281CC1330000A5ECFA /* BarTableViewCell.swift */; };
+		233ECD2A1CC1330000A5ECFA /* BarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD281CC1330000A5ECFA /* BarTableViewCell.swift */; };
+		233ECD2C1CC1347900A5ECFA /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD2B1CC1347900A5ECFA /* BarTableViewController.swift */; };
+		233ECD2D1CC1347900A5ECFA /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD2B1CC1347900A5ECFA /* BarTableViewController.swift */; };
+		233ECD2F1CC134D100A5ECFA /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD2E1CC134D100A5ECFA /* Bar.swift */; };
+		233ECD301CC134D100A5ECFA /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233ECD2E1CC134D100A5ECFA /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +37,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		233A00FD1CC1BAC400841CE8 /* BarMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarMapViewController.swift; sourceTree = "<group>"; };
+		233A01001CC1C9AA00841CE8 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		233A01031CC1D17A00841CE8 /* bars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bars.json; sourceTree = "<group>"; };
 		233ECD031CC12FC900A5ECFA /* TestAppartoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppartoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233ECD071CC12FC900A5ECFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233ECD081CC12FC900A5ECFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		233ECD0A1CC12FC900A5ECFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		233ECD0D1CC12FC900A5ECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		233ECD0F1CC12FC900A5ECFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		233ECD121CC12FC900A5ECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		233ECD181CC12FC900A5ECFA /* TestAppartooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppartooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		233ECD1D1CC12FC900A5ECFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233ECD1E1CC12FC900A5ECFA /* TestAppartooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppartooTests.swift; sourceTree = "<group>"; };
+		233ECD281CC1330000A5ECFA /* BarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewCell.swift; sourceTree = "<group>"; };
+		233ECD2B1CC1347900A5ECFA /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
+		233ECD2E1CC134D100A5ECFA /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +93,14 @@
 		233ECD051CC12FC900A5ECFA /* TestAppartoo */ = {
 			isa = PBXGroup;
 			children = (
+				233A01031CC1D17A00841CE8 /* bars.json */,
 				233ECD081CC12FC900A5ECFA /* AppDelegate.swift */,
-				233ECD0A1CC12FC900A5ECFA /* ViewController.swift */,
+				233A00FD1CC1BAC400841CE8 /* BarMapViewController.swift */,
 				233ECD0C1CC12FC900A5ECFA /* Main.storyboard */,
+				233ECD281CC1330000A5ECFA /* BarTableViewCell.swift */,
+				233ECD2B1CC1347900A5ECFA /* BarTableViewController.swift */,
+				233A01001CC1C9AA00841CE8 /* VCMapView.swift */,
+				233ECD2E1CC134D100A5ECFA /* Bar.swift */,
 				233ECD0F1CC12FC900A5ECFA /* Images.xcassets */,
 				233ECD111CC12FC900A5ECFA /* LaunchScreen.xib */,
 				233ECD061CC12FC900A5ECFA /* Supporting Files */,
@@ -193,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233ECD0E1CC12FC900A5ECFA /* Main.storyboard in Resources */,
+				233A01041CC1D17A00841CE8 /* bars.json in Resources */,
 				233ECD131CC12FC900A5ECFA /* LaunchScreen.xib in Resources */,
 				233ECD101CC12FC900A5ECFA /* Images.xcassets in Resources */,
 			);
@@ -202,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233A01051CC1D17A00841CE8 /* bars.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233ECD0B1CC12FC900A5ECFA /* ViewController.swift in Sources */,
+				233A01011CC1C9AA00841CE8 /* VCMapView.swift in Sources */,
+				233ECD2F1CC134D100A5ECFA /* Bar.swift in Sources */,
 				233ECD091CC12FC900A5ECFA /* AppDelegate.swift in Sources */,
+				233ECD291CC1330000A5ECFA /* BarTableViewCell.swift in Sources */,
+				233ECD2C1CC1347900A5ECFA /* BarTableViewController.swift in Sources */,
+				233A00FE1CC1BAC400841CE8 /* BarMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233A01021CC1C9AA00841CE8 /* VCMapView.swift in Sources */,
 				233ECD1F1CC12FC900A5ECFA /* TestAppartooTests.swift in Sources */,
+				233A00FF1CC1BAC400841CE8 /* BarMapViewController.swift in Sources */,
+				233ECD301CC134D100A5ECFA /* Bar.swift in Sources */,
+				233ECD2D1CC1347900A5ECFA /* BarTableViewController.swift in Sources */,
+				233ECD2A1CC1330000A5ECFA /* BarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestAppartoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestAppartoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +445,7 @@
 				233ECD241CC12FC900A5ECFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		233ECD251CC12FC900A5ECFA /* Build configuration list for PBXNativeTarget "TestAppartooTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +454,7 @@
 				233ECD271CC12FC900A5ECFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

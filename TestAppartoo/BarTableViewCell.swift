@@ -22,16 +22,13 @@ class BarTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
     
     // MARK: Action
-    
-    @IBAction func showOnMap(sender: UIButton) {
-    }
     
     @IBAction func goToWebsite(sender: UIButton) {
         UIApplication.sharedApplication().openURL(NSURL(string: bar!.url)!)

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
 
 class BarTableViewController: UITableViewController {
     
     // MARK: Attributs
     var barList = [Bar]()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,13 +40,13 @@ class BarTableViewController: UITableViewController {
         cell.bar = bar
         
         // Affichage du tag et du nom du bar
-        cell.nameLabel.text = bar.name
+        cell.nameLabel.text = bar.title
         cell.tagsLabel.text = bar.tags
         
         // Téléchargement de l'image du bar
         let url = NSURL(string: bar.imageUrl)
         let data = NSData(contentsOfURL: url!)
-        cell.photoImageView.contentMode = .ScaleAspectFit
+        cell.photoImageView.contentMode = .ScaleAspectFill
         cell.photoImageView.image = UIImage(data: data!)
         
         return cell
@@ -56,8 +57,9 @@ class BarTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let barDetailViewController = segue.destinationViewController as! MapViewController
+        let barDetailViewController = segue.destinationViewController as! BarMapViewController
         
+        // L'utilisateur ne souhaite afficher qu'un bar
         if segue.identifier == "ShowSingleBar" {
             // Cherche la cellule qui a généré le segue
             if let selectedBarCell = sender as? BarTableViewCell {
@@ -66,6 +68,7 @@ class BarTableViewController: UITableViewController {
                 barDetailViewController.centerMapOnSingleBar(selectedBar)
             }
         }
+            // L'utilisateur veut voir la carte
         else if segue.identifier == "ShowMap" {
             // Affiche directement la map avec tous les bars
             barDetailViewController.showMapWithAllBars(barList)
@@ -77,41 +80,34 @@ class BarTableViewController: UITableViewController {
     
     func loadBarsFromFile() {
         
-        let first = Bar(id: 123,
-            adress: "123 rue de la couille, 75002 Paris, France, Le Louvre, Paris",
-            name: "Le bar de la grosse couille",
-            url: "https://www.facebook.com",
-            tags: "pute, soumis, gay",
-            imageUrl: "https://goo.gl/0Alft5",
-            latitude: 48.8534100,
-            longitude: 2.3488000)!
-        
-        let second = Bar(id: 42,
-            adress: "42 rue de la couille, 75002 Paris, France, Le Louvre, Paris",
-            name: "Le bar de ta mère",
-            url: "https://www.google.com",
-            tags: "homo, alcool",
-            imageUrl: "https://goo.gl/0Alft5",
-            latitude: 49.8534100,
-            longitude: 1.3488000)!
-        
-        barList += [first]
-        
-        if let path = NSBundle.mainBundle().pathForResource("BarsList", ofType: "geojson") {
+        // Chargement du fichier JSON
+        if let path = NSBundle.mainBundle().pathForResource("bars", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil) {
                 if let jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
                     if let bars : NSArray = jsonResult["bars"] as? NSArray {
+                        
                         // Parcourt de la liste des bars
                         for bar in bars {
+                            // URL de la page World's Best Bars
+                            let website = "http://www.worldsbestbars.com" + (bar["url"] as! String)
+                            
+                            // Liste des tags
+                            var tags: String
+                            if let tag = bar["tags"] as? Bool {
+                                tags = "\(tag)"
+                            } else {
+                                tags = bar["tags"] as! String
+                            }
+                            
                             // Création de l'object bar
                             let b = Bar(id: bar["id"] as! Int,
-                                adress: bar["adress"] as! String,
+                                adress: bar["address"] as! String,
                                 name: bar["name"] as! String,
-                                url: bar["url"] as! String,
-                                tags: bar["tags"] as! String,
+                                url: website,
+                                tags: tags,
                                 imageUrl: bar["image_url"] as! String,
-                                latitude: bar["latitude"] as! Float,
-                                longitude: bar["longitude"] as! Float)!
+                                coordinate: CLLocationCoordinate2D(latitude: bar["latitude"] as! Double, longitude: bar["longitude"] as! Double))
+                            
                             // Ajout à la liste
                             barList += [b]
                         }
