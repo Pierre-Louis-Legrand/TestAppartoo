@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>712696D2-DA2C-43CE-95E1-A0B95AD1A577</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestAppartoo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>90B8CC416597A84A57B25AA744F0E4EF2367FBAF</key>
+		<string>https://github.com/Pierre-Louis-Legrand/TestAppartoo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestAppartoo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>90B8CC416597A84A57B25AA744F0E4EF2367FBAF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Pierre-Louis-Legrand/TestAppartoo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>90B8CC416597A84A57B25AA744F0E4EF2367FBAF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>90B8CC416597A84A57B25AA744F0E4EF2367FBAF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestAppartoo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
