@@ -42,7 +42,9 @@ class Bar: NSObject, MKAnnotation {
     // MARK: Helper
     
     func mapItem() -> MKMapItem {
-        let addressDictionary = [String(kABPersonAddressStreetKey): subtitle]
+        var addressDictionary : [String:String]?
+        addressDictionary = [String(kABPersonAddressStreetKey): subtitle]
+        
         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary)
         
         let mapItem = MKMapItem(placemark: placemark)
